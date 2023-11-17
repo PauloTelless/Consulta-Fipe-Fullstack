@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='fipe.css')}}">
+    <title>Fipe</title>
+</head>
+<body>
+    <div class="main-info">
+        <div class="titulo">
+            <h1>Resultado</h1>
+        </div>
+        <div class="main-label">
+            <label>Valor</label>
+            <div class="valor">
+                {{valor}}
+            </div>
+            <label>Marca</label>
+            <div class="modelo">
+                {{marca}}
+            </div>
+            <label>Modelo</label>
+            <div class="modelo">
+                {{modelo}}
+            </div>
+            <label>Ano</label>
+            <div class="ano">
+                {{ano}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

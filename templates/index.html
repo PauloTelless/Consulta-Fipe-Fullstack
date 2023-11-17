@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Fipe</title>
+</head>
+<body>
+    <div class="form-box">
+        <div class="nome-principal">
+            <h1>Consulta FIPE</h1>
+        </div>
+        <form action="http://127.0.0.1:5000/fipe" method="POST">
+            <label>Digite o código do veículo</label>
+            <input type="text" name="codigo" placeholder="Código do veículo" required autocomplete="off">
+            <label>Digite o ano do veículo</label>
+            <input type="text" name="ano" placeholder="Ano do veículo" required autocomplete="off">
+            <button>Verificar</button>
+        </form>
+    </div>
+</body>
+</html>
